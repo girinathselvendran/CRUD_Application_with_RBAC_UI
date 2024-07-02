@@ -32,7 +32,7 @@ export const AuthContext = createContext(initialState);
 
 export const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AuthReducer, initialState);
-  const BASE_URL = "http://localhost:5000/api/users";
+  const BASE_URL = "https://crud-application-with-rbac-api.onrender.com/api/users";
   
   useEffect(() => {
     if (localStorage.jwtToken) {

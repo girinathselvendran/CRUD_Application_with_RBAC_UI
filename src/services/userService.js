@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_API_URL = "http://localhost:5000/api/users";
+const BASE_API_URL = "https://crud-application-with-rbac-api.onrender.com/api/users";
 
 const fetchAllUsers = async () => {
   try {

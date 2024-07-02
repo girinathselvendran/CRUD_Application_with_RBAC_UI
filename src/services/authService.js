@@ -2,7 +2,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 import setAuthToken from "../utils/setAuthToken";
 
-const BASE_URL = "http://localhost:5000/api/users";
+const BASE_URL = "https://crud-application-with-rbac-api.onrender.com/api/users";
 
 export const registerUser = (userData) => {
   return axios.post(BASE_URL + "/register", userData);
