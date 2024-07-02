@@ -212,7 +212,7 @@ const Dashboard = () => {
             </TableHead>
             <TableBody>
               {customers?.length > 0 ? (
-                customers?.map((customer) => (
+                customers&&customers?.map((customer) => (
                   <TableRow key={customer._id}>
                     <TableCell>{customer.name}</TableCell>
                     <TableCell>{customer.email}</TableCell>
